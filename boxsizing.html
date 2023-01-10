@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: black;
+      }
+      .glowing {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .glowing span {
+        color: rgb(26, 12, 12);
+        font-family: Verdana;
+        font-size: 10px;
+        color: #fff;
+        display: inline-block;
+        animation: animate 2s linear infinite;
+        width: 24px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        margin: 0 -2.5px;
+      }
+      @keyframes animate {
+        0% {
+          color: #f00;
+          box-shadow: 0 2px 10px rgba(255, 0, 0, 1);
+          border: 1px solid rgba(255, 0, 0, 1);
+        }
+        33.3% {
+          color: #ff0;
+          box-shadow: 0 2px 10px rgba(255, 255, 0, 1);
+          border: 1px solid rgba(255, 255, 0, 1);
+        }
+        66.6% {
+          color: #0f0;
+          box-shadow: 0 2px 10px rgba(0, 255, 0, 1);
+          border: 1px solid rgba(0, 255, 0, 1);
+        }
+        100% {
+          color: #f00;
+          box-shadow: 0 2px 10px rgba(255, 0, 0, 1);
+          border: 1px solid rgba(255, 0, 0, 1);
+        }
+      }
+      .glowing span:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .glowing span:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      .glowing span:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .glowing span:nth-child(4) {
+        animation-delay: 0.3s;
+      }
+      .glowing span:nth-child(5) {
+        animation-delay: 0.4s;
+      }
+      .glowing span:nth-child(6) {
+        animation-delay: 0.5s;
+      }
+      .glowing span:nth-child(7) {
+        animation-delay: 0.6s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glowing">
+      <span>M</span>
+      <span>O</span>
+      <span>N</span>
+      <span>I</span>
+      <span>R</span>
+    </div>
+  </body>
+</html>

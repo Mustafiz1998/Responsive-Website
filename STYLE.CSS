@@ -1,0 +1,36 @@
+/*pseudo class hove,visited,focus*/
+h1:hover {
+  color: red;
+  background-color: aqua;
+}
+
+.middle-persion:focus {
+  color: blue;
+  font-weight: 700;
+}
+a:visited {
+  color: red;
+}
+
+li {
+  color: chocolate;
+}
+li:first-child {
+  color: red;
+}
+
+li:nth-child(n) {
+  color: crimson;
+}
+li:nth-child(2n + 1) {
+  background-color: darkcyan;
+}
+
+h3::before {
+  content: "Hello ";
+}
+.special::after {
+  content: "gelo ";
+  background-color: brown;
+  font-size: 20px;
+}
